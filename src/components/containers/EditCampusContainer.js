@@ -51,22 +51,19 @@ class EditCampusContainer extends Component {
             redirect: true, 
             redirectId: this.props.campus.id
         });
-    }
 
-    handleSubmitStudent = async event => {
-      event.preventDefault();
-
-        let student = {
-            firstname: this.state.firstname,
-            lastname: this.state.lastname,
-            campusId: this.props.campus.id,
-            email: this.state.email,
-            gpa: this.state.gps,
-        };
+    
+      let student = {
+          firstname: this.state.firstname,
+          lastname: this.state.lastname,
+          campusId: this.props.campus.id,
+          email: this.state.email,
+          gpa: this.state.gps,
+      };
         
-        console.log("This is the campus: ",student)
+
         let newStudent = await this.props.addStudent(student);
-       
+      
         this.setState({
           firstname: "", 
           lastname: "", 
@@ -74,9 +71,9 @@ class EditCampusContainer extends Component {
           redirect: true, 
           redirectId: newStudent.id
         });
-        
     }
 
+    
     componentWillUnmount() {
         this.setState({redirect: false, redirectId: null});
     }

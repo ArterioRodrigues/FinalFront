@@ -76,7 +76,7 @@ const EditCampusView = (props) => {
             Add Student
           </Typography>
         </div>
-        <form style={{textAlign: 'center'}} onSubmit={(e) => handleSubmitStudent(e)}>
+        <form style={{textAlign: 'center'}} onSubmit={(e) => handleSubmit(e)}>
           <label style= {{color:'#11153e', fontWeight: 'bold'}}>First Name: </label>
           <input type="text" name="firstname" onChange ={(e) => handleChange(e)} />
           <br/>
@@ -96,7 +96,7 @@ const EditCampusView = (props) => {
           <input type="text" name="gpa" onChange={(e) => handleChange(e)} />
           <br/>
           <br/>
-          
+
           <Button variant="contained" color="primary" type="submit">
             Submit
           </Button>
