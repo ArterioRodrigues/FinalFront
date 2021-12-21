@@ -4,19 +4,19 @@ import "./App.css";
 import { Switch, Route } from "react-router-dom";
 //Components
 import {
-  HomePageContainer,
-  CampusContainer,
-  StudentContainer,
-  AllCampusesContainer,
-  AllStudentsContainer,
+  HomePageContainer, //stores homepage info
+  CampusContainer,  //stores campus info
+  StudentContainer, //stores student info
+  AllCampusesContainer, //stores all campus info
+  AllStudentsContainer, //stores all Student info
   NewStudentContainer,
   NewCampusContainer,
   EditCampusContainer,
 } from './components/containers';
 
-// if you create separate components for adding/editing 
-// a student or campus, make sure you add routes to those
-// components here
+ 
+// added route components provided here
+
 
 const App = () => {
   return (
