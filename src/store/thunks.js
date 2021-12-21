@@ -30,6 +30,7 @@ export const fetchCampusThunk = (id) => async (dispatch) => {
   }
 };
 
+
 export const addCampusThunk = (campus) => async (dispatch) => {
   try {
     console.log("Adding")
@@ -100,6 +101,7 @@ export const editStudentThunk = student => async dispatch => {
 };
 
 //Single student
+
 export const fetchStudentThunk = id => async dispatch => {
   try {
     let res = await axios.get(`/api/students/${id}`);
