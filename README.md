@@ -1,3 +1,4 @@
-# Starter code for CRUD App
+# Assignment 4
+## Group Members
 
-## Client 
+Arterio Rodrigues, Destiny Barbery
