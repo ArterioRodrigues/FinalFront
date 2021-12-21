@@ -83,7 +83,7 @@ class EditCampusContainer extends Component {
 
     render() {
         if(this.state.redirect) {
-            return (<Redirect to={`/campus/${this.props.campus.id}`}/>)
+            return (<Redirect to={`/campuses`}/>)
         }
         return (
           <EditCampusView 
