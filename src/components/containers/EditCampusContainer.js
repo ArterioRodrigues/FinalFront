@@ -59,7 +59,9 @@ class EditCampusContainer extends Component {
         let student = {
             firstname: this.state.firstname,
             lastname: this.state.lastname,
-            campusId: this.props.campus.id
+            campusId: this.props.campus.id,
+            email: this.state.email,
+            gpa: this.state.gps,
         };
         
         console.log("This is the campus: ",student)
@@ -81,7 +83,7 @@ class EditCampusContainer extends Component {
 
     render() {
         if(this.state.redirect) {
-            return (<Redirect to={`/campus/${this.state.redirectId}`}/>)
+            return (<Redirect to={`/campus/${this.props.campus.id}`}/>)
         }
         return (
           <EditCampusView 
